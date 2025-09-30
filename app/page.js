@@ -170,9 +170,8 @@ export default function SteelEngraveSite() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Confecții Metalice
-                <span className="block bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-                  De Precizie
+                <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                  Metalele sunt pasiunea noastră!
                 </span>
               </h1>
               <p className="text-xl text-zinc-400 mb-6">
