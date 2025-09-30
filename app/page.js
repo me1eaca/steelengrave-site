@@ -175,8 +175,11 @@ export default function SteelEngraveSite() {
                   De Precizie
                 </span>
               </h1>
-              <p className="text-xl text-zinc-400 mb-8">
+              <p className="text-xl text-zinc-400 mb-6">
                 Transformăm viziunea ta în realitate prin tehnologie avansată CNC, gravare laser și sudură profesională. De la prototip la serie mică și medie.
+              </p>
+              <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
+                De la garduri și panouri decorative din oțel, la balustrade din fier și piese pentru utilaje agricole. Te ajutăm cu consultanță în proiectare, pentru modelul perfect atât ca design cât și ca buget.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
