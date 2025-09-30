@@ -130,9 +130,9 @@ export default function SteelEngraveSite() {
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+40741234567" className="flex items-center space-x-2 text-sm hover:text-orange-500 transition">
+              <a href="tel:+40726402650" className="flex items-center space-x-2 text-sm hover:text-orange-500 transition">
                 <Phone className="w-4 h-4" />
-                <span>+40 741 234 567</span>
+                <span>0726 402 650</span>
               </a>
             </div>
 
@@ -186,8 +186,8 @@ export default function SteelEngraveSite() {
                   Solicită Ofertă
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition" />
                 </a>
-                <a 
-                  href="https://wa.me/40741234567" 
+                <a
+                  href="https://wa.me/40726402650"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-orange-500 rounded-lg font-semibold hover:bg-orange-500/10 transition"
@@ -346,8 +346,8 @@ export default function SteelEngraveSite() {
             >
               Solicită Ofertă Gratuită
             </a>
-            <a 
-              href="https://wa.me/40741234567"
+            <a
+              href="https://wa.me/40726402650"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white rounded-lg font-semibold hover:bg-white/10 transition"
@@ -438,8 +438,8 @@ export default function SteelEngraveSite() {
                   <Phone className="w-6 h-6 text-orange-500 mt-1" />
                   <div>
                     <div className="font-semibold">Telefon</div>
-                    <a href="tel:+40741234567" className="text-zinc-400 hover:text-orange-500">
-                      +40 741 234 567
+                    <a href="tel:+40726402650" className="text-zinc-400 hover:text-orange-500">
+                      0726 402 650
                     </a>
                   </div>
                 </div>
@@ -457,7 +457,7 @@ export default function SteelEngraveSite() {
                   <div>
                     <div className="font-semibold">Adresă</div>
                     <p className="text-zinc-400">
-                      Oltenița, Călărași, România
+                      Călărași, România
                     </p>
                   </div>
                 </div>
@@ -503,13 +503,13 @@ export default function SteelEngraveSite() {
       <footer className="bg-zinc-950 py-8 px-4 border-t border-zinc-800">
         <div className="max-w-7xl mx-auto text-center text-zinc-400">
           <p>&copy; 2025 SteelEngrave. Toate drepturile rezervate.</p>
-          <p className="mt-2 text-sm">Confecții metalice de precizie | Oltenița, România</p>
+          <p className="mt-2 text-sm">Confecții metalice de precizie | Călărași, România</p>
         </div>
       </footer>
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/40741234567"
+        href="https://wa.me/40726402650"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 group"
