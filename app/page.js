@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Menu, X, Phone, Mail, MapPin, ArrowRight, Zap, Layers, Settings, Wrench, Shield, Clock } from 'lucide-react';
 
 export default function SteelEngraveSite() {
@@ -62,35 +63,41 @@ export default function SteelEngraveSite() {
   ];
 
   const projects = [
-    { 
-      category: "Automotive", 
+    {
+      category: "Automotive",
       title: "Componente Auto Personalizate",
-      description: "Piese de precizie pentru industria auto"
+      description: "Piese de precizie pentru industria auto",
+      image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=600&auto=format&fit=crop"
     },
-    { 
-      category: "Mobilier", 
+    {
+      category: "Mobilier",
       title: "Structuri Metalice Design",
-      description: "Elemente decorative pentru mobilier premium"
+      description: "Elemente decorative pentru mobilier premium",
+      image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?q=80&w=600&auto=format&fit=crop"
     },
-    { 
-      category: "Industrie", 
+    {
+      category: "Industrie",
       title: "Componente Industriale",
-      description: "Piese complexe pentru echipamente industriale"
+      description: "Piese complexe pentru echipamente industriale",
+      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=600&auto=format&fit=crop"
     },
-    { 
-      category: "Decorațiuni", 
+    {
+      category: "Decorațiuni",
       title: "Panouri Decorative",
-      description: "Design modern pentru spații comerciale"
+      description: "Design modern pentru spații comerciale",
+      image: "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=600&auto=format&fit=crop"
     },
-    { 
-      category: "Construcții", 
+    {
+      category: "Construcții",
       title: "Elemente Arhitecturale",
-      description: "Soluții metalice pentru proiecte de construcții"
+      description: "Soluții metalice pentru proiecte de construcții",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop"
     },
-    { 
-      category: "Prototipare", 
+    {
+      category: "Prototipare",
       title: "Prototipuri Rapide",
-      description: "De la concept la produs finit"
+      description: "De la concept la produs finit",
+      image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=600&auto=format&fit=crop"
     }
   ];
 
@@ -207,13 +214,15 @@ export default function SteelEngraveSite() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-2xl overflow-hidden border border-zinc-700 shadow-2xl">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Settings className="w-32 h-32 text-orange-500/20 mx-auto mb-4" />
-                    <p className="text-zinc-500 text-sm">Imagini echipamente și lucrări</p>
-                  </div>
-                </div>
+              <div className="aspect-square rounded-2xl overflow-hidden border border-zinc-700 shadow-2xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=800&auto=format&fit=crop"
+                  alt="Echipamente CNC și gravare laser"
+                  width={800}
+                  height={800}
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-orange-500/10 rounded-full blur-2xl"></div>
             </div>
@@ -277,12 +286,18 @@ export default function SteelEngraveSite() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-700 hover:border-orange-500 transition group"
               >
-                <div className="aspect-video bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
-                  <Layers className="w-16 h-16 text-orange-500/20" />
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-sm text-orange-500 font-semibold">{project.category}</span>
